@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
-import Contacts from './components/contacts';
+import Provinces from './components/provinces.jsx';
 
 class App extends Component {
   render() {
     return (
-        <Contacts contacts={this.state.contacts} />
+        <Provinces provinces={this.state.provinces} />
     )
   }
 
   state = {
-      contacts: []
+      provinces: []
   };
 
   componentDidMount() {
     fetch('https://indonesia-covid-19-api.now.sh/api/provinsi')
       .then(res => res.json())
       .then((data) => {
-          this.setState({ contacts: data.data })
+          this.setState({ provinces: data.data })
       })
       .catch(console.log)
   }  
