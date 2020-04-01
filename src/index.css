@@ -27,3 +27,7 @@ code {
 .header-text {
   background-color: #52a1c7;
 }
+
+.navbar-light .navbar-brand {
+  color: #fff;
+}
