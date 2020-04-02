@@ -8,9 +8,9 @@ const Provinces = ({provinces}) => {
                 <div className="row">
                     <div className="col-12">
                         {provinces.map((province) => (
-                            <div key={province.id} className="card text-center mb-3">
+                            <div key={province.id} className="card mb-3">
                                 <div className="card-body">
-                                    <h5 className="card-title">{province.provinsi}</h5>
+                                    <h6 className="card-title">{province.provinsi}</h6>
                                     <span className="card-subtitle mb-2 mr-3">Positif: {province.kasusPosi}</span>
                                     <span className="card-subtitle mb-2 mr-3">Sembuh: {province.kasusSemb}</span>
                                     <span className="card-subtitle mb-2 mr-3">Meninggal: {province.kasusMeni}</span>

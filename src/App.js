@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Provinces from './components/provinces.js';
 import Country from './components/country.js';
 import Footer from './components/footer.js';
-
 class App extends Component {
   render() {
     return (
