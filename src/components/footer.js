@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="header-text">
+    <div className="header-text mt-5">
       <div className="footer">
         <nav className="navbar fixed-bottom navbar-light bg-dark">
           <Link to="/" className="navbar-brand">

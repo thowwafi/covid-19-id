@@ -10,18 +10,18 @@ const Provinces = ({ provinces }) => {
         <div className="row">
           {provinces.map(province => (
             <div className="col-xs-12 col-md-3">
-              <div key={province.id} className="card mb-3">
+              <div key={province.id} className="card mb-3 box-shadow">
                 <div className="card-body">
                   <h6 className="card-title">{province.provinsi}</h6>
-                  <span className="card-subtitle mb-2 mr-3">
+                  <div className="card-subtitle mb-2 mr-3">
                     Positif: {province.kasusPosi}
-                  </span>
-                  <span className="card-subtitle mb-2 mr-3">
+                  </div>
+                  <div className="card-subtitle mb-2 mr-3">
                     Sembuh: {province.kasusSemb}
-                  </span>
-                  <span className="card-subtitle mb-2 mr-3">
+                  </div>
+                  <div className="card-subtitle mb-2 mr-3">
                     Meninggal: {province.kasusMeni}
-                  </span>
+                  </div>
                 </div>
               </div>
             </div>

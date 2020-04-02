@@ -13,20 +13,21 @@ code {
 }
 
 .card-body {
-  background-color: #6d2b2b;
+  /* background-color: #6d2b2b; */
 }
 
 .card-title {
   color: #dfca99;
+  font-weight: bold;
 }
 
 .card-subtitle {
-  color: #fff;
+  /* color: #fff; */
   font-size: 14px;
 }
 
 .header-text {
-  background-color: #52a1c7;
+  /* background-color: #52a1c7; */
 }
 
 .navbar-light .navbar-brand {
