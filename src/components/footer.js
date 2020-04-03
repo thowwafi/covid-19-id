@@ -9,9 +9,9 @@ const Footer = () => {
           <Link to="/" className="navbar-brand">
             Home
           </Link>
-          {/* <Link to="/chart" className="navbar-brand">
-            Chart
-          </Link> */}
+          <Link to="/chart" className="navbar-brand">
+            Harian
+          </Link>
           <Link to="/about" className="navbar-brand">
             Data
           </Link>
