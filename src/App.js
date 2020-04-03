@@ -1,38 +1,73 @@
-import React, { Component } from 'react';
-import Provinces from './components/provinces.js';
-import Country from './components/country.js';
-import Footer from './components/footer.js';
-class App extends Component {
-  render() {
-    return (
-        <div>
-          <Country country={this.state.country}></Country>
-          <Provinces provinces={this.state.provinces}></Provinces>
-          <Footer></Footer>
-        </div>
-    )
-  }
+import React, { Component, useState, useEffect } from "react";
+import Provinces from "./components/provinces.js";
+import Country from "./components/country.js";
+import Footer from "./components/footer.js";
+import SearchBar from "./components/SearchBar.js";
 
-  state = {
-      provinces: [],
-      country: []
-  };
+export default function NewApp() {
+  const [country, setCountry] = useState([]);
+  const [provinces, setProvinces] = useState([]);
 
-  componentDidMount() {
-    fetch('https://indonesia-covid-19-api.now.sh/api')
+  useEffect(() => {
+    fetch("https://indonesia-covid-19-api.now.sh/api")
       .then(res => res.json())
-      .then((data) => {
-          this.setState({ country: data })
+      .then(data => {
+        setCountry(data);
+        // this.setState({ country: data });
       })
-      .catch(console.log)
-  
-    fetch('https://indonesia-covid-19-api.now.sh/api/provinsi')
+      .catch(console.log);
+
+    fetch("https://indonesia-covid-19-api.now.sh/api/provinsi")
       .then(res => res.json())
-      .then((data) => {
-          this.setState({ provinces: data.data })
+      .then(data => {
+        setProvinces(data.data);
+        // this.setState({ provinces: data.data });
       })
-      .catch(console.log)
-  }  
+      .catch(console.log);
+  }, []);
+
+  return (
+    <div>
+      <Country country={country}></Country>
+
+      <Provinces provinces={provinces}></Provinces>
+    </div>
+  );
 }
 
-export default App;
+// react jaman old
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <Country country={this.state.country}></Country>
+//         <SearchBar search="" setSearch={} />
+//         <Provinces provinces={this.state.provinces}></Provinces>
+//       </div>
+//     );
+//   }
+
+//   state = {
+//     provinces: [],
+//     country: []
+//   };
+
+//   componentDidMount() {
+//     fetch("https://indonesia-covid-19-api.now.sh/api")
+//       .then(res => res.json())
+//       .then(data => {
+//         this.setState({ country: data });
+//       })
+//       .catch(console.log);
+
+//     fetch("https://indonesia-covid-19-api.now.sh/api/provinsi")
+//       .then(res => res.json())
+//       .then(data => {
+//         this.setState({ provinces: data.data });
+//       })
+//       .catch(console.log);
+//   }
+// }
+
+// export default App;
