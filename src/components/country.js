@@ -2,25 +2,26 @@ import React from "react";
 
 const Country = ({ country }) => {
   return (
-    <div className="header-text">
+    <div className="header-text mt-4">
       <center>
-        <h1>Data Seluruh Indonesia</h1>
+        <h4>Data Pantauan COVID-19 Indonesia</h4>
+        {/* <span>Terakhir Pembaruan: </span> */}
       </center>
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="card text-center">
+            <div className="card text-center box-shadow">
               <div className="card-body">
                 <h5 className="card-title">TOTAL:{country.jumlahKasus}</h5>
-                <span className="card-subtitle mb-2 mr-3">
-                  Positif: {country.perawatan}
-                </span>
-                <span className="card-subtitle mb-2 mr-3">
+                <div className="card-subtitle mb-2 mr-3">
+                  Perawatan: {country.perawatan}
+                </div>
+                <div className="card-subtitle mb-2 mr-3">
                   Sembuh: {country.sembuh}
-                </span>
-                <span className="card-subtitle mb-2 mr-3">
+                </div>
+                <div className="card-subtitle mb-2 mr-3">
                   Meninggal: {country.meninggal}
-                </span>
+                </div>
               </div>
             </div>
           </div>

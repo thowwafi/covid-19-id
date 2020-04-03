@@ -7,10 +7,7 @@ const Provinces = ({ provinces }) => {
     return province.provinsi.toLowerCase().includes(searchText.toLowerCase());
   });
   return (
-    <div className="header-text">
-      <center>
-        <h1>Data per Provinsi</h1>
-      </center>
+    <div className="header-text mt-3">
       <div className="container">
         <SearchBar
           search={searchText}

@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="header-text mt-5">
-      <div className="footer">
-        <nav className="navbar fixed-bottom navbar-light bg-dark">
+    <div className="header-text mt-4">
+      <div className="footer box-shadow">
+        <nav className="navbar fixed-bottom navbar-light bg-light">
           <Link to="/" className="navbar-brand">
             Home
           </Link>
-          <Link to="/chart" className="navbar-brand">
+          {/* <Link to="/chart" className="navbar-brand">
             Chart
-          </Link>
+          </Link> */}
           <Link to="/about" className="navbar-brand">
-            Tentang
+            Data
           </Link>
         </nav>
       </div>
