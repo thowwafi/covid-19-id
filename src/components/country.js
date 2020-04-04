@@ -6,10 +6,25 @@ const Country = ({ country }) => {
       <center>
         <h4>Data Pantauan COVID-19 Indonesia</h4>
         <i>
-          Sumber data:{" "}
-          <a href="https://github.com/mathdroid/indonesia-covid-19-api">
+          Data:
+          <a
+            style={{ marginLeft: "3px" }}
+            href="https://github.com/mathdroid/indonesia-covid-19-api"
+            target="_blank"
+          >
             mathdroid/indonesia-covid-19-api
-          </a>{" "}
+          </a>
+        </i>
+        <br />
+        <i>
+          Code:
+          <a
+            style={{ marginLeft: "3px" }}
+            href="https://github.com/thowwafi/covid-19-id"
+            target="_blank"
+          >
+            thowwafi/covid-19-id
+          </a>
         </i>
       </center>
       <br />

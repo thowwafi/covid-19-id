@@ -19,7 +19,22 @@ const Provinces = ({ provinces }) => {
             <div className="col-xs-12 col-md-3">
               <div key={province.id} className="card mb-3 box-shadow">
                 <div className="card-body">
-                  <h6 className="card-title">{province.provinsi}</h6>
+                  <h6 className="card-title">
+                    {province.provinsi}
+                    {province.provinsi === "Indonesia" ? (
+                      <small
+                        style={{
+                          fontSize: "12px",
+                          color: "#000",
+                          marginLeft: "5px"
+                        }}
+                      >
+                        (Belum ada informasi lokasi)
+                      </small>
+                    ) : (
+                      <i></i>
+                    )}
+                  </h6>
                   <div className="card-subtitle mb-2 mr-3">
                     Positif: {province.kasusPosi}
                   </div>
