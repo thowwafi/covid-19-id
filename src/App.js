@@ -3,6 +3,7 @@ import Provinces from "./components/provinces.js";
 import Country from "./components/country.js";
 import Footer from "./components/footer.js";
 import SearchBar from "./components/SearchBar.js";
+import AddToHomescreen from "react-add-to-homescreen";
 
 export default function NewApp() {
   const [country, setCountry] = useState([]);
@@ -28,6 +29,9 @@ export default function NewApp() {
 
   return (
     <div style={{ marginTop: "4em" }}>
+      <AddToHomescreen
+        onAddToHomescreenClick={this.handleAddToHomescreenClick}
+      ></AddToHomescreen>
       <Country country={country}></Country>
 
       <Provinces provinces={provinces}></Provinces>

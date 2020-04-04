@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "COVID-19 ID",
+  "name": "Data Pantauan COVID-19 Indonesia",
   "icons": [
     {
       "src": "favicon.ico",
