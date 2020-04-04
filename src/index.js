@@ -7,10 +7,11 @@ import Chart from "./components/chart";
 import Peta from "./components/peta";
 import Footer from "./components/footer";
 import About from "./components/about";
+import NewApp from "./App";
 
 const MyApp = () => (
   <Router>
-    <Route exact path="/" component={App} />
+    <Route exact path="/" component={NewApp} />
     <Route path="/chart" component={Chart} />
     <Route path="/peta" component={Peta} />
     <Route path="/about" component={About} />

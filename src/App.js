@@ -29,9 +29,6 @@ export default function NewApp() {
 
   return (
     <div style={{ marginTop: "4em" }}>
-      <AddToHomescreen
-        onAddToHomescreenClick={this.handleAddToHomescreenClick}
-      ></AddToHomescreen>
       <Country country={country}></Country>
 
       <Provinces provinces={provinces}></Provinces>
