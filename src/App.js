@@ -27,7 +27,7 @@ export default function NewApp() {
   }, []);
 
   return (
-    <div>
+    <div style={{ marginTop: "4em" }}>
       <Country country={country}></Country>
 
       <Provinces provinces={provinces}></Provinces>

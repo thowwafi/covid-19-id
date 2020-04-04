@@ -2,11 +2,17 @@ import React from "react";
 
 const Country = ({ country }) => {
   return (
-    <div className="header-text" style={{marginTop: '5em'}}>
+    <div className="header-text">
       <center>
         <h4>Data Pantauan COVID-19 Indonesia</h4>
-        <i>Sumber data: <a href="https://github.com/mathdroid/indonesia-covid-19-api">mathdroid/indonesia-covid-19-api</a> </i>
+        <i>
+          Sumber data:{" "}
+          <a href="https://github.com/mathdroid/indonesia-covid-19-api">
+            mathdroid/indonesia-covid-19-api
+          </a>{" "}
+        </i>
       </center>
+      <br />
       <div className="container">
         <div className="row">
           <div className="col-12">

@@ -3,14 +3,18 @@ import styled from "styled-components";
 class About extends React.Component {
   render() {
     return (
-      <div>
-        <FullScreenWrapper
-          // width="600"
-          // height="450"
-          src="https://datastudio.google.com/embed/reporting/0da1c48e-0971-4e9d-9d44-e37963d6c278/page/cytKB"
-          frameborder="0"
-          allowfullscreen
-        ></FullScreenWrapper>
+      <div style={{ marginTop: "4em" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="card box-shadow">
+                <div className="card-body">
+                  <h3 className="bold">Tentang</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

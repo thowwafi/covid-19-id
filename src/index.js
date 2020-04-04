@@ -4,13 +4,15 @@ import "./index.css";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
 import Chart from "./components/chart";
-import About from "./components/about";
+import Peta from "./components/peta";
 import Footer from "./components/footer";
+import About from "./components/about";
 
 const MyApp = () => (
   <Router>
     <Route exact path="/" component={App} />
     <Route path="/chart" component={Chart} />
+    <Route path="/peta" component={Peta} />
     <Route path="/about" component={About} />
     <Footer />
   </Router>
